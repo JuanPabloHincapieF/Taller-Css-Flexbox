@@ -1,0 +1,96 @@
+/* todos con space evenly */
+:root {
+  --principal: #212121;
+  --numero: #323232;
+  --hijo: #0d7377;
+  --item: #14ffec;
+}
+body {
+  margin: 0;
+  background-color: var(--principal);
+}
+
+.principal {
+  background-color: var(--principal);
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  height: 100vh;
+  position: relative;
+  align-items: center;
+}
+/* numeros */
+.principal div {
+  flex-grow: 1;
+  background-color: var(--numero);
+  margin: 10px;
+  flex-basis: 500px;
+}
+/* hijos */
+.principal div div {
+  background-color: var(--hijo);
+}
+/* items */
+.principal div div div {
+  background-color: var(--item);
+}
+.uno-hijo {
+  padding: 10px;
+  display: flex;
+  text-align: center;
+}
+.uno-hijo div {
+  padding: 5px;
+}
+
+.dos-hijo {
+  padding: 10px;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.dos-hijo div {
+  padding: 10px;
+  flex-basis: 150px;
+}
+.dos-hijo-item1 {
+  order: 30;
+}
+.dos-hijo-item2 {
+  order: 50;
+}
+.dos-hijo-item3 {
+  order: 10;
+}
+.dos-hijo-item4 {
+  order: 40;
+}
+.dos-hijo-item5 {
+  order: 60;
+}
+.dos-hijo-item6 {
+  order: 20;
+}
+.tres-hijo {
+  padding: 10px;
+  text-align: center;
+}
+.tres-hijo div {
+  padding: 5px;
+}
+.cuatro-hijo {
+  display: flex;
+  padding: 10px;
+  text-align: center;
+  flex-wrap: wrap-reverse;
+}
+.cuatro-hijo div {
+  padding: 5px;
+  background-color: var(--item);
+}
+
+@media screen and (max-width: 1000px) {
+  .cuatro-hijo div {
+    background-color: #fff !important;
+  }
+}
