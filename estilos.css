@@ -38,9 +38,11 @@ body {
   padding: 10px;
   display: flex;
   text-align: center;
+  flex-wrap: wrap;
 }
 .uno-hijo div {
   padding: 5px;
+  flex-basis: 60px;
 }
 
 .dos-hijo {
